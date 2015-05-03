@@ -1,6 +1,6 @@
 # Yii2 PusherWS
 
-Pusher WebSocket Real-Time API for Yii2
+Yii2 WebSocket Real-Time API for Pusher
 
 ## What is it?
 
