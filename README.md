@@ -17,24 +17,20 @@ class MyClient extends AbstractWebSocket
 {
     public function onWelcome(array $data)
     {
-        echo "WELCOME\n";
-
         $this->subscribe("ticker.3");
-
-        echo "SUBSCRIBE SEND\n";
+        echo "SUBSCRIBE COMMAND SEND\n";
     }
 
     public function onMessage( array $data )
     {
         return parent::onMessage( $data );
         var_dump($data);
-
     }
 }
 ```
 
 After that run WebSocket
-```
+```php
 $appkey = "YOUR_PUSHER_APP_KEY";
 
 $loop = \React\EventLoop\Factory::create();
