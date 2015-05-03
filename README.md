@@ -11,8 +11,6 @@ It used Yii2 ReactPHP Event library for create communication stream.
 
 Create your application client.
 ```php
-<?php
-
 class MyClient extends AbstractWebSocket
 {
     public function onWelcome(array $data)
