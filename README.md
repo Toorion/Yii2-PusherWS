@@ -24,14 +24,12 @@ class MyClient extends AbstractWebSocket
         echo "SUBSCRIBE SEND\n";
     }
 
-
     public function onMessage( array $data )
     {
         return parent::onMessage( $data );
         var_dump($data);
 
     }
-
 }
 ```
 
@@ -41,7 +39,13 @@ $appkey = "YOUR_PUSHER_APP_KEY";
 
 $loop = \React\EventLoop\Factory::create();
 
-$this->socket = new PusherWebSocket( new MyClient( $this ), $loop, 'ws.pusherapp.com', 443, "/app/$appkey?client=js&version=2.2&protocol=5");
+$this->socket = new PusherWebSocket(
+    new MyClient( $this ),
+    $loop,
+    'ws.pusherapp.com',
+    443,
+    "/app/$appkey?client=js&version=2.2&protocol=5"
+);
 
 $loop->run();
 
