@@ -1,0 +1,29 @@
+{
+    "name": "toorion/pusher-ws",
+    "type": "library",
+    "description": "Pusher WebSocket API",
+    "keywords": [
+        "WebSockets",
+        "Client",
+        "Pusher",
+        "Sockets"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denis Solomatin", "email": "toorion@gmail.com", "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Pusher-ws": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "react/socket": "0.4.*",
+        "cboden/ratchet": "0.3.*",
+        "ratchet/pawl": "0.1.*",
+        "psr/log": "~1"
+    }
+}
