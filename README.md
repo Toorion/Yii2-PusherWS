@@ -15,7 +15,7 @@ class MyClient extends AbstractWebSocket
 {
     public function onWelcome(array $data)
     {
-        $this->subscribe("ticker.3");
+        $this->subscribe("channel_you_needed");
         echo "SUBSCRIBE COMMAND SEND\n";
     }
 
